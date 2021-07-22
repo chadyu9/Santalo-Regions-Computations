@@ -231,6 +231,7 @@ public class SantaloIterations extends JPanel{
         	
         	findPolar();
         	initialD = shoelace(points)*shoelace(polarPoints)/(Math.pow(Math.PI, 2));
+        	polarPoints.clear();
     	}
     	else if (iterationMode.toLowerCase().equals("distortion")) {
     		Scanner reader3 = new Scanner(System.in);
