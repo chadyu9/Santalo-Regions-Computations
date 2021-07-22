@@ -93,7 +93,7 @@ public class SantaloIterations extends JPanel{
 	    				System.out.println(firstGoodPoints.get(v)[0]+ " "+firstGoodPoints.get(v)[1]);
 	    			}
 	    			System.out.println("Minimum Distortion Factor: "+ initialD);
-	    			
+	    			System.out.println("Complete.");
     			}
     			else if (iterationMode.toLowerCase().equals("iterative")) {
     				System.out.println(distort + " " + initialD);
@@ -168,6 +168,7 @@ public class SantaloIterations extends JPanel{
         			for (int index = 0; index < secondPoints.size(); index++) {
     					System.out.println(secondPoints.get(index)[0] + " " + secondPoints.get(index)[1]);
     				}
+        			System.out.println("Complete.");
     			}
     		}
     	});
