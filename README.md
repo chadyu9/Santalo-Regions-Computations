@@ -10,3 +10,11 @@ For our project, my program helped to demonstrate certain properties of the Sant
 ## Instructions for User
 One way to run this program is through the Eclipse Integrated Development Environment (IDE). Once you download the latest version of Eclipse, the folder in this repository, and your workspace is set up, select File -> Open Projects from File System -> the folder where you saved the program -> Sántalo Regions folder. This allows the user to both create their own version of the program or run iterative procedures of the Sántalo Regions.
 ### Running the Program
+Once the user runs the program, they will be prompted with the following:
+```
+Enter in the type of body: 
+```
+Although the program is mostly used for users to input points on the boundary of the body, I also developed a few common convex bodies whose boundaries are computed by the program for the Santaló Regions algorithm. I did this for a circle with a set radius, a convex body of the form $x^4+y^4 \leq k$ for a fixed k, a fixed ellipse, and a regular polygon whose number of sides and size is determined by user input. The keywords for each of these bodies is "circle", "four", "ellipse", and "regular", respectively. If the user enters "regular", they are then prompted for the following:
+```
+
+```
