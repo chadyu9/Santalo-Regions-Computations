@@ -14,7 +14,11 @@ Once the user runs the program, they will be prompted with the following:
 ```
 Enter in the type of body: 
 ```
-Although the program is mostly used for users to input points on the boundary of the body, I also developed a few common convex bodies whose boundaries are computed by the program for the Santaló Regions algorithm. I did this for a circle with a set radius, a convex body of the form $x^4+y^4 \leq k$ for a fixed k, a fixed ellipse, and a regular polygon whose number of sides and size is determined by user input. The keywords for each of these bodies is "circle", "four", "ellipse", and "regular", respectively. If the user enters "regular", they are then prompted for the following:
+Although the program is mostly used for users to input points on the boundary of the body, I also developed a few common convex bodies whose boundaries are computed by the program for the Santaló Regions algorithm. I did this for a circle with a set radius, a convex body defined by a homogeneous fourth degree polynomial in two variables, a fixed ellipse, and a regular polygon whose number of sides and size is determined by user input. The keywords for each of these bodies is "circle", "four", "ellipse", and "regular", respectively. If the user enters "regular", they are then prompted for the following:
 ```
-
+Enter in the number of sides: 
+```
+After entering an integer value for the number of edges of the regular polygon, the user is prompted for the radius of the circumscribed circle of the regular polygon (distance from each vertex to the center of mass):
+```
+Enter in the circumscribed radius: 
 ```
