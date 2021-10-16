@@ -22,3 +22,4 @@ After entering an integer value for the number of edges of the regular polygon, 
 ```
 Enter in the circumscribed radius: 
 ```
+For a body whose points are manually inputted into the 
