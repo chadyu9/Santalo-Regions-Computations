@@ -185,7 +185,7 @@ public class SantaloIterations extends JPanel{
     	if (bodyType.toLowerCase().equals("input")) {
     		String inStr;
         	while (true){
-        		System.out.print("Enter point x,y separated by comma or type \"done\": ");
+        		System.out.print("Enter point x,y separated by a comma or type \"done\": ");
         		inStr = reader.nextLine();
         		if (inStr.equals("done")) {
         			break;
