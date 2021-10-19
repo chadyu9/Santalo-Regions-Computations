@@ -22,4 +22,18 @@ After entering an integer value for the number of edges of the regular polygon, 
 ```
 Enter in the circumscribed radius: 
 ```
-For a body whose points are manually inputted into the 
+For a body whose points are manually inputted into the program, the user enters in "input" for the type of body and is prompted for the following:
+```
+Enter point x,y seperated by a comma or type "done": 
+```
+The user is prompted this until they enter "done", when all of the points are finished being inputted. Regardless of the type of body, once the basic inputs that are necessary to construct the body are in place, then the user is prompted for which procedure to run as follows:
+```
+Iterative or Distortion Procedure? 
+```
+If the user chooses the iterative procedure, they are followed up for other inputs:
+```
+Normalized version? 
+Enter the number of iterations: 
+Enter the distortion factor (t):
+```
+In the iterative procedure, the Santaló Region is found for the body that is inputted in by the user, and passed to the next iteration as the convex body to be processed. Then the Santaló Region is found of this body, and the process is repeated. The first procedure-specific input that is asked is for the normalization of the volume of the body for each procedure. In this case, the resulting Santaló Region is first normalized before proceeding to the next iteration, so the visualization of convergence is more apparent. The second input takes in the number of iterations, and the last input takes in the distortion factor, which affects the size and shape of the Santaló Region through the volume product condition. An example of the iterative procedure with normalization is shown below.
