@@ -8,6 +8,7 @@ This has direct implications in convex geometry, as it serves as a visualization
 
 For our project, my program helped to demonstrate certain properties of the Santaló Regions and indicate possibilities at the relation of the Santaló Regions to ellipses. Specifically, our two main iterative procedures show a convergence of a sequence of Santaló Regions to an ellipse through a "smoothing" of the Santaló Regions through the iterations. This further hints at a connection between the Santaló Regions and Mahler's Conjecture, as the ellipsoid is the unique maximizer of the Mahler Volume (product of volume of a body and volume of its polar) in all dimensions. 
 ## Instructions for User
+### Setting Up the IDE and Project from Repository
 One way to run this program is through the Eclipse Integrated Development Environment (IDE). Once you download the latest version of Eclipse, the folder in this repository, and your workspace is set up, select File -> Open Projects from File System -> the folder where you saved the program -> Sántalo Regions folder. This allows the user to both create their own version of the program or run iterative procedures of the Sántalo Regions.
 ### Running the Program
 Once the user runs the program, they will be prompted with the following:
@@ -35,5 +36,18 @@ If the user chooses the iterative procedure, they are followed up for other inpu
 Normalized version? 
 Enter the number of iterations: 
 Enter the distortion factor (t):
+Enter translation vector: 
 ```
-In the iterative procedure, the Santaló Region is found for the body that is inputted in by the user, and passed to the next iteration as the convex body to be processed. Then the Santaló Region is found of this body, and the process is repeated. The first procedure-specific input that is asked is for the normalization of the volume of the body for each procedure. In this case, the resulting Santaló Region is first normalized before proceeding to the next iteration, so the visualization of convergence is more apparent. The second input takes in the number of iterations, and the last input takes in the distortion factor, which affects the size and shape of the Santaló Region through the volume product condition. An example of the iterative procedure with normalization is shown below.
+In the iterative procedure, the Santaló Region is found for the body that is inputted in by the user, and passed to the next iteration as the convex body to be processed. Then the Santaló Region is found of this body, and the process is repeated. The first procedure-specific input that is asked is for the normalization of the volume of the body for each procedure. In this case, the resulting Santaló Region is first normalized to a fixed volume before proceeding to the next iteration, so the visualization of convergence is more apparent. The second input takes in the number of iterations, and the last input takes in the distortion factor, which affects the size and shape of the Santaló Region through the volume product condition. The translation vector determines by how much the body is translated. The translation is usually 0, but the author included this for experimentation on iterations  An example of the iterative procedure with normalization is shown below.
+<img width="1112" alt="Screen Shot 2021-10-19 at 10 19 54 AM" src="https://user-images.githubusercontent.com/73807846/137929432-87f176bb-5faf-4335-a14b-c42c1849300d.png">
+In the distortion procedure, the Santaló Region is found for the inputted convex body. Then, the minimum distortion is found, which is the smallest distortion such that the Santaló Region is nonempty. The sequence of convex bodies with distortions ranging from the minimum distortion to a specified distortion are displayed. For this procedure, the following inputs are prompted:
+```
+Normalized Version?
+Enter constant area: 
+Enter translation vector: 
+```
+The prompt for normalization and translation obtains the same values as for the iterative procedure. But in this procedure specifically, the prompt for a constant area gets the fixed value to which the body's area is normalized to for each iteration. An example of the distortion procedure is shown below:
+<img width="1112" alt="Screen Shot 2021-10-19 at 1 07 45 PM" src="https://user-images.githubusercontent.com/73807846/137958465-140c004a-f949-4a4a-a003-2d5f62cad36b.png">
+The frame for the program is the section of the xy plane with x and y coordinates ranging from -5 to 5. The user can feel free to change this after downloading the repository. 
+## Attribution
+If you use this code in your reseach, please cite my name (Chad Yu) and either my previous educational institution (Montgomery Blair High School), which I was attending while developing this program, or my current place of study (Cornell University). The paper for our research is still in progress.
